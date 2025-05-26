@@ -9,8 +9,6 @@
 
 **Site educativo sobre a conexão entre campo e cidade**
 
-[🚀 Como Usar](#como-executar) | [📖 Sobre](#sobre-o-projeto)
-
 </div>
 
 ---
@@ -24,6 +22,7 @@
 - [♿ Acessibilidade](#-acessibilidade)
 - [📱 Responsividade](#-responsividade)
 - [📚 Referências](#-referências)
+- [📞 Contato](#-contato)
 
 ---
 
@@ -146,7 +145,7 @@ Perguntas para quem mora na cidade, no campo, e para todos nós pensarmos juntos
 - **Localização**: Região Sul do Brasil
 - **Cultivos**: Aveia, Pinus, Pastagem, Mecanização
 ### Créditos Programação
-- **Codigos**: Achilles de Souza Correia, 3C, COlégio Estadual Santa Candida
+- **Codigos**: Achilles de Souza Correia, 3C, Colégio Estadual Santa Candida
 - **Endereço**: Rua Theodoro Makiolka, 155 - Santa Cândida, Curitiba - PR, 82640-010, Brazil
 ---
 
