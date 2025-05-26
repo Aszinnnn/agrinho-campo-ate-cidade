@@ -141,7 +141,7 @@ Perguntas para quem mora na cidade, no campo, e para todos nós pensarmos juntos
 | Tempo para formar 1cm de solo | 500-1000 anos | Literatura científica |
 
 ### Créditos das Fotos
-- **Todas as fotos**: Amanda Cristina Foetsch (Professora de Matemática)
+- **Todas as fotos**: Amanda Cristina Foetsch (Professora de Matemática II)
 - **Localização**: Região Sul do Brasil
 - **Cultivos**: Aveia, Pinus, Pastagem, Mecanização
 ### Créditos Programação
