@@ -169,6 +169,5 @@ Perguntas para quem mora na cidade, no campo, e para todos nós pensarmos juntos
 
 **Projeto Agrinho 2025**
 
-[![GitHub stars](https://img.shields.io/github/stars/seu-usuario/agrinho-campo-cidade?style=social)](https://github.com/seu-usuario/agrinho-campo-cidade/stargazers)
 
 </div>
