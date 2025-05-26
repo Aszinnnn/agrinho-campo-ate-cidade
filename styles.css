@@ -21,8 +21,8 @@
   --cor-aviso: #ffc107;
 
   /* Tipografia */
-  --fonte-principal: "Roboto Slab";
-  --fonte-titulo: "Roboto Slab";
+  --fonte-principal:"Roboto Slab", serif;
+  --fonte-titulo: "Roboto Slab", serif;
 
   /* Espaçamentos */
   --espacamento-xs: 0.25rem;
