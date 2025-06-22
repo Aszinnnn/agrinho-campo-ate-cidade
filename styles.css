@@ -65,6 +65,7 @@ body {
   line-height: 1.6;
   color: var(--cor-cinza-escuro);
   background-color: var(--cor-branco);
+  /* IMPORTANTE: Padding padrão é 0, será aplicado apenas no desktop */
   padding-left: 0;
 }
 
@@ -195,11 +196,14 @@ body {
   visibility: hidden;
   transition: all var(--transicao-media);
   cursor: pointer;
+  /* ESCONDIDO POR PADRÃO */
+  display: none;
 }
 
 .menu-toggle-input:checked ~ .menu-overlay {
   opacity: 1;
   visibility: visible;
+  display: block;
 }
 
 /* Navegação lateral com CSS puro */
@@ -216,9 +220,11 @@ body {
   overflow-y: auto;
   transition: transform var(--transicao-media);
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  /* VISÍVEL POR PADRÃO NO DESKTOP */
+  transform: translateX(0);
 }
 
-/* Indicador de progresso visual */
+/* Indicador de progresso visual - APENAS DESKTOP */
 .nav-progress-indicator {
   position: absolute;
   left: 0;
@@ -291,10 +297,22 @@ body {
   box-shadow: 0 2px 8px rgba(74, 124, 89, 0.2);
 }
 
-/* Ajuste do conteúdo principal */
+/* DESKTOP: Aplicar padding ao body quando sidebar está visível */
 @media (min-width: 1025px) {
   body {
     padding-left: var(--sidebar-width);
+  }
+
+  .sidebar-nav {
+    transform: translateX(0);
+  }
+
+  .menu-toggle-label {
+    display: none !important;
+  }
+
+  .menu-overlay {
+    display: none !important;
   }
 }
 
@@ -1685,7 +1703,7 @@ body {
   text-decoration: underline;
 }
 
-/* Responsividade melhorada */
+/* RESPONSIVIDADE CORRIGIDA */
 
 /* Tablets grandes e desktops pequenos */
 @media (max-width: 1024px) and (min-width: 769px) {
@@ -1695,6 +1713,14 @@ body {
 
   body {
     padding-left: var(--sidebar-width);
+  }
+
+  .sidebar-nav {
+    transform: translateX(0);
+  }
+
+  .menu-toggle-label {
+    display: none;
   }
 
   .container {
@@ -1710,19 +1736,21 @@ body {
   }
 }
 
-/* Tablets */
+/* Tablets e Mobile */
 @media (max-width: 768px) {
+  /* RESET: Remover padding do body no mobile */
   body {
-    padding-left: 0;
+    padding-left: 0 !important;
   }
 
+  /* Mostrar botão hambúrguer */
   .menu-toggle-label {
-    display: flex;
+    display: flex !important;
   }
 
   /* SIDEBAR ESCONDIDA POR PADRÃO NO MOBILE */
   .sidebar-nav {
-    transform: translateX(-100%);
+    transform: translateX(-100%) !important;
     width: 280px;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.2);
     z-index: 1001;
@@ -1730,18 +1758,19 @@ body {
 
   /* REMOVER O INDICADOR VERDE BUGADO NO MOBILE */
   .nav-progress-indicator {
-    display: none;
+    display: none !important;
   }
 
   /* Menu mobile ativo - CORRIGIDO */
   .menu-toggle-input:checked ~ .sidebar-nav {
-    transform: translateX(0);
+    transform: translateX(0) !important;
   }
 
   /* Garantir que o overlay funcione */
   .menu-toggle-input:checked ~ .menu-overlay {
     opacity: 1;
     visibility: visible;
+    display: block;
     z-index: 1000;
   }
 
@@ -1849,19 +1878,21 @@ body {
 
 /* Smartphones */
 @media (max-width: 480px) {
+  body {
+    padding-left: 0 !important;
+  }
+
   .container {
     padding: 0 var(--espacamento-sm);
   }
 
   .sidebar-nav {
     width: 260px;
-    /* Garantir que está escondida */
-    transform: translateX(-100%);
+    transform: translateX(-100%) !important;
   }
 
-  /* REMOVER INDICADOR VERDE TAMBÉM EM SMARTPHONES */
   .nav-progress-indicator {
-    display: none;
+    display: none !important;
   }
 
   .hero {
@@ -2039,14 +2070,17 @@ body {
 
 /* Smartphones muito pequenos */
 @media (max-width: 360px) {
-  .sidebar-nav {
-    width: 240px;
-    transform: translateX(-100%);
+  body {
+    padding-left: 0 !important;
   }
 
-  /* REMOVER INDICADOR VERDE */
+  .sidebar-nav {
+    width: 240px;
+    transform: translateX(-100%) !important;
+  }
+
   .nav-progress-indicator {
-    display: none;
+    display: none !important;
   }
 
   .hero-title {
@@ -2073,12 +2107,16 @@ body {
 
 /* Landscape em smartphones */
 @media (max-height: 500px) and (orientation: landscape) {
+  body {
+    padding-left: 0 !important;
+  }
+
   .sidebar-nav {
-    transform: translateX(-100%);
+    transform: translateX(-100%) !important;
   }
 
   .nav-progress-indicator {
-    display: none;
+    display: none !important;
   }
 
   .hero {
@@ -2130,7 +2168,7 @@ body {
   }
 
   body {
-    padding-left: 0;
+    padding-left: 0 !important;
   }
 
   .hero {
