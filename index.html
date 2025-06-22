@@ -2,43 +2,55 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/trigo.png" type="image/png">
     <title>Festejando a Conexão Campo Cidade - Agrinho 2024</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <meta name="description" content="Descubra como o campo e a cidade estão conectados através da ciência do solo, agricultura e sustentabilidade. Site educativo sobre a interdependência entre meio rural e urbano.">
     <meta name="keywords" content="campo, cidade, agricultura, solo, sustentabilidade, agrinho, conexão rural urbana">
     <meta name="author" content="Projeto Agrinho 2024">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Skip link para navegação por teclado -->
     <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
     
-    <!-- Header com navegação -->
     <header class="header" role="banner">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+        
         <nav class="nav" role="navigation" aria-label="Navegação principal do site">
             <div class="nav-container">
                 <div class="logo">
                     <h1>🌱 Campo & Cidade</h1>
                 </div>
-                <input type="checkbox" id="menu-toggle" class="menu-toggle-input" aria-hidden="true">
-                <label for="menu-toggle" class="menu-toggle-label" aria-label="Abrir ou fechar menu de navegação" role="button" tabindex="0">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
+                <!-- Label para o menu mobile -->
+                <label for="menu-toggle" class="menu-toggle-label" aria-label="Abrir menu de navegação">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </label>
-                <ul class="nav-menu" role="menubar" aria-label="Menu principal">
-                    <li role="none"><a href="#introducao" role="menuitem">Introdução</a></li>
-                    <li role="none"><a href="#solo" role="menuitem">Solo</a></li>
-                    <li role="none"><a href="#caminho" role="menuitem">Caminho</a></li>
-                    <li role="none"><a href="#analise" role="menuitem">Análise</a></li>
-                    <li role="none"><a href="#curiosidades" role="menuitem">Curiosidades</a></li>
-                </ul>
             </div>
         </nav>
+        
+        <!-- Navegação lateral com CSS puro -->
+        <nav class="sidebar-nav" role="navigation" aria-label="Navegação por seções">
+            <div class="nav-progress-indicator"></div>
+            <ul class="nav-sections">
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#solo">Solo</a></li>
+                <li><a href="#caminho">Caminho</a></li>
+                <li><a href="#analise">Análise</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#cidade">Cidade</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#estudos">Estudos</a></li>
+                <li><a href="#contato">Reflexões</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Overlay para fechar menu mobile -->
+        <label for="menu-toggle" class="menu-overlay"></label>
     </header>
 
     <!-- Hero Section -->
@@ -89,7 +101,7 @@
                 </div>
                 
                 <aside class="scientific-fact">
-                    <h3> Fato Científico</h3>
+                    <h3>Fato Científico</h3>
                     <p>Uma colher de chá de solo contém mais organismos vivos do que pessoas no planeta Terra! Essa biodiversidade invisível é responsável por 95% dos alimentos que consumimos nas cidades.</p>
                 </aside>
             </div>
@@ -99,35 +111,35 @@
         <section id="solo" class="section solo-section" role="region" aria-labelledby="solo-title">
             <div class="container">
                 <header class="section-header">
-                    <h2 id="solo-title" class="section-title"> Anatomia do Solo</h2>
+                    <h2 id="solo-title" class="section-title">Anatomia do Solo</h2>
                     <p class="section-subtitle">Explorando as camadas que sustentam a vida</p>
                 </header>
                 
                 <div class="solo-infografico">
                     <div class="solo-visual" role="img" aria-label="Representação visual das quatro camadas do solo">
                         <div class="camada-visual organica">
-                            <span class="camada-label">Camada Orgânica (0-5cm)</span>
+                            <span class="camada-label">Camada Orgânica (0-5 cm)</span>
                         </div>
                         <div class="camada-visual aravel">
-                            <span class="camada-label">Solo Arável (5-30cm)</span>
+                            <span class="camada-label">Solo Arável (5-30 cm)</span>
                         </div>
                         <div class="camada-visual subsolo">
-                            <span class="camada-label">Subsolo (30-100cm)</span>
+                            <span class="camada-label">Subsolo (30-100 cm)</span>
                         </div>
                         <div class="camada-visual rocha">
-                            <span class="camada-label">Rocha-Mãe (100cm+)</span>
+                            <span class="camada-label">Rocha-Mãe (100 cm+)</span>
                         </div>
                     </div>
                     
                     <div class="solo-info">
                         <div class="info-resumo">
-                            <h3> Camadas do Solo</h3>
+                            <h3>Camadas do Solo</h3>
                             <p>O solo é formado por diferentes camadas, cada uma com características únicas que contribuem para o crescimento das plantas e a sustentação da vida. Da superfície até a rocha-mãe, cada horizonte tem sua importância no ecossistema.</p>
                             
                             <div class="dados-cientificos">
                                 <div class="dado-item">
                                     <strong>Formação:</strong>
-                                    <span>500-1000 anos para 1cm</span>
+                                    <span>500-1000 anos para 1 cm</span>
                                 </div>
                                 <div class="dado-item">
                                     <strong>Biodiversidade:</strong>
@@ -145,14 +157,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
         <!-- Seção 3: Caminho da Colheita até o Prato -->
         <section id="caminho" class="section caminho-section" role="region" aria-labelledby="caminho-title">
             <div class="container">
                 <header class="section-header">
-                    <h2 id="caminho-title" class="section-title"> Da Colheita ao Prato</h2>
+                    <h2 id="caminho-title" class="section-title">Da Colheita ao Prato</h2>
                     <p class="section-subtitle">A jornada dos alimentos do campo à cidade</p>
                 </header>
 
@@ -185,7 +196,7 @@
                         <div class="timeline-icon">🏪</div>
                         <div class="timeline-content">
                             <h3>4. Distribuição</h3>
-                            <p>Na CEASA da capital, os produtos foram descarregados e passaram por inspeção de qualidade. De lá, seguiram para feiras, mercados de bairro e restaurantes.</p>
+                        <p>Na CEASA da capital, os produtos foram descarregados e passaram por inspeção de qualidade. De lá, seguiram para feiras, mercados de bairro e restaurantes.</p>
                         </div>
                     </article>
 
@@ -204,7 +215,7 @@
                         <div class="stat-label">dos alimentos urbanos vêm da agricultura familiar</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">1.500km</div>
+                        <div class="stat-number">1.500 km</div>
                         <div class="stat-label">distância média percorrida pelos alimentos</div>
                     </div>
                     <div class="stat-card">
@@ -219,17 +230,17 @@
         <section id="analise" class="section analise-section" role="region" aria-labelledby="analise-title">
             <div class="container">
                 <header class="section-header">
-                    <h2 id="analise-title" class="section-title"> Analisando o Campo</h2>
+                    <h2 id="analise-title" class="section-title">Analisando o Campo</h2>
                     <p class="section-subtitle">Análise técnica de cultivos e práticas agrícolas</p>
                 </header>
 
                 <div class="analise-container">
                     <article class="analise-item">
                         <div class="analise-image">
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/aveia.jpg-APTLJWdDCTYzDaZm6fEnL8wI4bVKcM.jpeg" alt="Campo de aveia em crescimento com solo bem preparado" loading="lazy">
+                            <img src="img/aveia.jpg" alt="Campo de aveia em crescimento com solo bem preparado" title="Cultivo de aveia: cereal de inverno adaptável a climas temperados, usado como cobertura verde" loading="lazy">
                         </div>
                         <div class="analise-content">
-                            <h3> Cultivo de Aveia</h3>
+                            <h3>Cultivo de Aveia</h3>
                             <p><strong>Análise Técnica:</strong> A aveia (Avena sativa) é um cereal de inverno altamente adaptável a climas temperados. Observa-se no campo um excelente preparo do solo com sulcos uniformes, indicando plantio mecanizado adequado.</p>
                             <p><strong>Sustentabilidade:</strong> Além da produção de grãos, a aveia atua como cobertura verde, protegendo o solo da erosão e contribuindo com matéria orgânica para cultivos subsequentes.</p>
                         </div>
@@ -237,10 +248,10 @@
 
                     <article class="analise-item">
                         <div class="analise-image">
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pinus.jpg-6Tp9ph2aC7eCUbeMZCXU9HryTLkuna.jpeg" alt="Estrada rural entre plantação de pinus" loading="lazy">
+                            <img src="img/pinus.jpg" alt="Estrada rural entre plantação de pinus" title="Silvicultura de Pinus: crescimento rápido, espaçamento 3x2m, integração com comunidade local" loading="lazy">
                         </div>
                         <div class="analise-content">
-                            <h3> Silvicultura de Pinus</h3>
+                            <h3>Silvicultura de Pinus</h3>
                             <p><strong>Manejo Florestal:</strong> O pinus apresenta crescimento rápido e alta adaptabilidade. A imagem revela plantio em fileiras com espaçamento adequado (3x2m), permitindo desenvolvimento ótimo das copas.</p>
                             <p><strong>Impacto Socioeconômico:</strong> A silvicultura gera empregos rurais permanentes e integra-se harmoniosamente com a comunidade local, promovendo desenvolvimento sustentável.</p>
                         </div>
@@ -248,10 +259,10 @@
 
                     <article class="analise-item">
                         <div class="analise-image">
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pastagem.jpg-8MFZgLV1gKZo0ca2FPQwAL0XruMy0e.jpeg" alt="Pastagem com gado bovino e araucária" loading="lazy">
+                            <img src="img/pastagem.jpg" alt="Pastagem com gado bovino e araucária" title="Sistema silvipastoril: pastagem manejada com bovinos, araucária nativa para sombreamento" loading="lazy">
                         </div>
                         <div class="analise-content">
-                            <h3> Manejo de Pastagens</h3>
+                            <h3>Manejo de Pastagens</h3>
                             <p><strong>Sistema Produtivo:</strong> Observa-se pastagem bem manejada com bovinos em sistema extensivo. A presença de araucária nativa indica integração entre produção pecuária e conservação ambiental.</p>
                             <p><strong>Sustentabilidade:</strong> O sistema silvipastoril proporciona bem-estar animal através do sombreamento e contribui para o sequestro de carbono.</p>
                         </div>
@@ -259,10 +270,10 @@
 
                     <article class="analise-item">
                         <div class="analise-image">
-                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/tratores.jpg-snStveUDM3feKzBzlV5pQrCkVaqF3Q.jpeg" alt="Trator New Holland em operação no campo" loading="lazy">
+                            <img src="img/tratores.jpg" alt="Trator New Holland em operação no campo" title="Trator New Holland 95 CV: transmissão sincronizada, tração 4x4, eficiência operacional" loading="lazy">
                         </div>
                         <div class="analise-content">
-                            <h3> Mecanização Agrícola</h3>
+                            <h3>Mecanização Agrícola</h3>
                             <p><strong>Tecnologia Aplicada:</strong> O trator New Holland possui motor de 95 CV, ideal para propriedades de médio porte. Sua transmissão sincronizada e tração 4x4 garantem eficiência operacional.</p>
                             <p><strong>Eficiência:</strong> A mecanização reduz em 80% o tempo de operações comparado ao trabalho manual, aumentando a produtividade por hectare.</p>
                         </div>
@@ -275,7 +286,7 @@
         <section id="curiosidades" class="section curiosidades-section" role="region" aria-labelledby="curiosidades-title">
             <div class="container">
                 <header class="section-header">
-                    <h2 id="curiosidades-title" class="section-title"> Sabia Disso?</h2>
+                    <h2 id="curiosidades-title" class="section-title">Sabia Disso?</h2>
                     <p class="section-subtitle">Curiosidades científicas sobre a conexão campo-cidade</p>
                 </header>
                 
@@ -337,52 +348,366 @@
             </div>
         </section>
 
-        <!-- Seção 6: Reflexões -->
-        <section id="contato" class="section contato-section" role="region" aria-labelledby="contato-title">
+        <!-- Seção 6: Inovações da Cidade para o Campo -->
+<section id="cidade" class="section cidade-section" role="region" aria-labelledby="cidade-title">
+    <div class="container">
+        <header class="section-header">
+            <h2 id="cidade-title" class="section-title"> Inovações da Cidade para o Campo</h2>
+            <p class="section-subtitle">Como a tecnologia urbana está revolucionando a agricultura brasileira</p>
+        </header>
+
+        <div class="inovacoes-grid">
+            <article class="inovacao-card">
+                <div class="inovacao-header">
+                    <span class="inovacao-icon">🚁</span>
+                    <h3>Drones Agrícolas</h3>
+                </div>
+                <div class="inovacao-content">
+                    <p><strong>Revolução no Monitoramento:</strong> Startups como a XMobots, de São Carlos-SP, desenvolvem drones que mapeiam plantações inteiras em horas, identificando pragas, doenças e áreas com deficiência nutricional.</p>
+                    <p><strong>Impacto Real:</strong> Redução de 40% no uso de defensivos e aumento de 25% na produtividade através do monitoramento de precisão.</p>
+                    <a href="https://www.xmobots.com.br/" target="_blank" rel="noopener noreferrer" class="saiba-mais">Conheça a XMobots</a>
+                </div>
+            </article>
+
+            <article class="inovacao-card">
+                <div class="inovacao-header">
+                    <span class="inovacao-icon">🤖</span>
+                    <h3>Inteligência Artificial</h3>
+                </div>
+                <div class="inovacao-content">
+                    <p><strong>Agricultura Inteligente:</strong> A Solinftec, unicórnio brasileiro, usa IA para otimizar operações agrícolas. Seus algoritmos analisam dados de satélites, sensores e máquinas em tempo real.</p>
+                    <p><strong>Resultados Comprovados:</strong> Economia de R$ 50 mil por fazenda anualmente através da otimização de rotas e redução de desperdícios.</p>
+                    <a href="https://www.solinftec.com/" target="_blank" rel="noopener noreferrer" class="saiba-mais">Explore a Solinftec</a>
+                </div>
+            </article>
+
+            <article class="inovacao-card">
+                <div class="inovacao-header">
+                    <span class="inovacao-icon">📱</span>
+                    <h3>Apps para Produtores</h3>
+                </div>
+                <div class="inovacao-content">
+                    <p><strong>Tecnologia no Bolso:</strong> O Aegro, desenvolvido em Piracicaba-SP, oferece gestão completa da fazenda via smartphone. Controla custos, monitora clima e gerencia equipes remotamente.</p>
+                    <p><strong>Democratização:</strong> Mais de 15 mil produtores usam a plataforma, desde pequenos até grandes fazendeiros, aumentando a eficiência em 30%.</p>
+                    <a href="https://aegro.com.br/" target="_blank" rel="noopener noreferrer" class="saiba-mais">Acesse o Aegro</a>
+                </div>
+            </article>
+
+            <article class="inovacao-card">
+                <div class="inovacao-header">
+                    <span class="inovacao-icon">🛰️</span>
+                    <h3>Agricultura de Precisão</h3>
+                </div>
+                <div class="inovacao-content">
+                    <p><strong>Visão Espacial:</strong> A Agrosmart combina dados de satélites com sensores IoT para criar mapas de produtividade ultra-precisos, orientando aplicações localizadas de fertilizantes.</p>
+                    <p><strong>Sustentabilidade:</strong> Redução de 35% no uso de fertilizantes e 50% na pegada de carbono através do manejo inteligente.</p>
+                    <a href="https://agrosmart.com.br/" target="_blank" rel="noopener noreferrer" class="saiba-mais">Descubra a Agrosmart</a>
+                </div>
+            </article>
+
+            <article class="inovacao-card">
+                <div class="inovacao-header">
+                    <span class="inovacao-icon">🧬</span>
+                    <h3>Biotecnologia Urbana</h3>
+                </div>
+                <div class="inovacao-content">
+                    <p><strong>Laboratórios de Inovação:</strong> A Embrapa, em parceria com universidades urbanas, desenvolve sementes geneticamente melhoradas e defensivos biológicos em laboratórios de São Paulo e Brasília.</p>
+                    <p><strong>Futuro Sustentável:</strong> Criação de plantas resistentes à seca e pragas, reduzindo dependência de agroquímicos em 60%.</p>
+                    <a href="https://www.embrapa.br/biotecnologia" target="_blank" rel="noopener noreferrer" class="saiba-mais">Explore a Biotecnologia</a>
+                </div>
+            </article>
+
+            <article class="inovacao-card">
+                <div class="inovacao-header">
+                    <span class="inovacao-icon">💰</span>
+                    <h3>Fintechs do Agro</h3>
+                </div>
+                <div class="inovacao-content">
+                    <p><strong>Crédito Inteligente:</strong> A Traive, fintech paulistana, usa big data para oferecer crédito rural personalizado, analisando histórico de produção e dados climáticos em tempo real.</p>
+                    <p><strong>Inclusão Financeira:</strong> Democratiza acesso ao crédito para pequenos produtores, com aprovação em 48 horas e taxas 40% menores.</p>
+                    <a href="https://traive.com/" target="_blank" rel="noopener noreferrer" class="saiba-mais">Conheça a Traive</a>
+                </div>
+            </article>
+        </div>
+
+        <aside class="cidade-impacto">
+            <h3> O Ecossistema AgTech Brasileiro</h3>
+            <div class="impacto-stats">
+                <div class="stat-highlight">
+                    <span class="stat-big">1,574</span>
+                    <span class="stat-desc">AgTechs ativas no Brasil</span>
+                </div>
+                <div class="stat-highlight">
+                    <span class="stat-big">R$ 2,5 bi</span>
+                    <span class="stat-desc">Investidos em 2023</span>
+                </div>
+                <div class="stat-highlight">
+                    <span class="stat-big">75%</span>
+                    <span class="stat-desc">Concentradas em SP, MG e RS</span>
+                </div>
+            </div>
+            <p>O Brasil é o 4º maior ecossistema de AgTechs do mundo, com startups que exportam tecnologia para mais de 30 países. São Paulo lidera com 35% das empresas, seguido por Minas Gerais (18%) e Rio Grande do Sul (12%).</p>
+        </aside>
+    </div>
+</section>
+
+        <!-- Seção 7: Da Cidade ao Campo - Tecnologia -->
+        <section id="tecnologia" class="section tecnologia-section" role="region" aria-labelledby="tecnologia-title">
             <div class="container">
                 <header class="section-header">
-                    <h2 id="contato-title" class="section-title"> Reflexões sobre Nossa Conexão</h2>
-                    <p class="section-subtitle">Pense na sua relação com o campo e a cidade</p>
+                    <h2 id="tecnologia-title" class="section-title"> Da Cidade ao Campo</h2>
+                    <p class="section-subtitle">Como a tecnologia urbana revoluciona a agricultura</p>
                 </header>
-                
-                <div class="reflexao-grid">
-                    <article class="reflexao-card">
-                        <h3>🌱 Para Quem Mora na Cidade</h3>
-                        <ul>
-                            <li>Que alimentos você consome diariamente que vêm do campo?</li>
-                            <li>Você conhece algum produtor rural da sua região?</li>
-                            <li>Como você pode valorizar mais a agricultura familiar?</li>
-                            <li>Que ações sustentáveis você pode adotar em casa?</li>
-                        </ul>
+
+                <div class="caminho-timeline">
+                    <article class="timeline-item">
+                        <div class="timeline-icon">💡</div>
+                        <div class="timeline-content">
+                            <h3>1. Pesquisa Urbana</h3>
+                            <p>Na Universidade de São Paulo, a equipe da Dra. Marina desenvolveu um sensor de umidade do solo que usa inteligência artificial. Três anos de pesquisa em laboratórios urbanos resultaram em uma tecnologia revolucionária.</p>
+                        </div>
                     </article>
-                    
-                    <article class="reflexao-card">
-                        <h3>🚜 Para Quem Mora no Campo</h3>
-                        <ul>
-                            <li>Como sua produção chega até as cidades?</li>
-                            <li>Que tecnologias urbanas podem ajudar na agricultura?</li>
-                            <li>Como preservar tradições rurais para as próximas gerações?</li>
-                            <li>Que parcerias com a cidade podem ser benéficas?</li>
-                        </ul>
+
+                    <article class="timeline-item">
+                        <div class="timeline-icon">🏭</div>
+                        <div class="timeline-content">
+                            <h3>2. Produção Industrial</h3>
+                            <p>A startup paulistana AgroTech recebeu o projeto e iniciou a produção em massa. Em sua fábrica na Grande São Paulo, 200 funcionários produzem 10 mil sensores mensais usando tecnologia de ponta.</p>
+                        </div>
                     </article>
-                    
-                    <article class="reflexao-card">
-                        <h3>🔄 Para Todos Nós</h3>
-                        <ul>
-                            <li>Como fortalecer a conexão entre campo e cidade?</li>
-                            <li>Que papel a educação tem nessa união?</li>
-                            <li>Como a ciência pode melhorar essa relação?</li>
-                            <li>Qual o futuro da agricultura sustentável?</li>
-                        </ul>
+
+                    <article class="timeline-item">
+                        <div class="timeline-icon">📱</div>
+                        <div class="timeline-content">
+                            <h3>3. Desenvolvimento de Software</h3>
+                            <p>Programadores em São Paulo criaram um aplicativo que conecta os sensores ao smartphone do agricultor. O app usa machine learning para prever o melhor momento de irrigação, economizando 30% de água.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-icon">🚚</div>
+                        <div class="timeline-content">
+                            <h3>4. Distribuição Tecnológica</h3>
+                            <p>Através de uma rede de distribuidores urbanos, a tecnologia chegou às lojas agropecuárias. Técnicos treinados em centros urbanos levam conhecimento e suporte para produtores rurais.</p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-icon">🌾</div>
+                        <div class="timeline-content">
+                            <h3>5. Aplicação no Campo</h3>
+                            <p>Seu João, agricultor no interior, instalou os sensores em sua plantação de milho. Com o app, aumentou sua produtividade em 25% e reduziu custos. A tecnologia urbana transformou sua realidade rural.</p>
+                        </div>
                     </article>
                 </div>
                 
-                <aside class="acao-call">
-                    <h3>💡 Sua Ação Faz a Diferença</h3>
-                    <p>Cada um de nós pode contribuir para fortalecer a conexão campo-cidade através de pequenas ações: comprando em feiras locais, fazendo compostagem, criando hortas urbanas, ou simplesmente valorizando o trabalho do agricultor.</p>
+                <aside class="estatisticas">
+                    <div class="stat-card">
+                        <div class="stat-number">R$ 15 bi</div>
+                        <div class="stat-label">investidos em AgTechs urbanas brasileiras</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1,200</div>
+                        <div class="stat-label">startups agro criadas em centros urbanos</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">40%</div>
+                        <div class="stat-label">aumento de produtividade com tecnologia urbana</div>
+                    </div>
                 </aside>
             </div>
         </section>
+
+        <!-- Seção 7: Estudos e Pesquisas -->
+        <section id="estudos" class="section estudos-section" role="region" aria-labelledby="estudos-title">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="estudos-title" class="section-title"> Estudos e Pesquisas</h2>
+                    <p class="section-subtitle">Aprofunde seus conhecimentos sobre a conexão campo-cidade</p>
+                </header>
+                
+                <div class="estudos-grid">
+                    <article class="estudo-card">
+                        <div class="estudo-icon">📺</div>
+                        <h3>Documentário Globoplay</h3>
+                        <p>Explore a jornada dos alimentos do campo à mesa através de um documentário completo que mostra a realidade da agricultura brasileira e sua conexão com os centros urbanos.</p>
+                        <a href="https://globoplay.globo.com/v/13363329/" target="_blank" rel="noopener noreferrer" class="estudo-button">
+                            Assistir Documentário
+                        </a>
+                    </article>
+                    
+                    <article class="estudo-card">
+                        <div class="estudo-icon">🏆</div>
+                        <h3>Nobel da Agricultura</h3>
+                        <p>Conheça a história da pesquisadora brasileira que revolucionou a ciência do solo e ganhou reconhecimento internacional, contribuindo para a agricultura sustentável mundial.</p>
+                        <a href="https://exame.com/agro/a-pesquisadora-brasileira-que-fixou-seu-nome-no-solo-e-ganhou-o-nobel-da-agricultura/" target="_blank" rel="noopener noreferrer" class="estudo-button">
+                            Ler Artigo
+                        </a>
+                    </article>
+                    
+                    <article class="estudo-card">
+                        <div class="estudo-icon">🎥</div>
+                        <h3>Série Educativa</h3>
+                        <p>Playlist completa no YouTube com vídeos educativos sobre agricultura, sustentabilidade e a importância da conexão entre o meio rural e urbano para o futuro do planeta.</p>
+                        <a href="https://www.youtube.com/playlist?list=PLLQ0zPCY-JQ5xxxBwIyOMCNGItUapNpTo" target="_blank" rel="noopener noreferrer" class="estudo-button">
+                            Ver Playlist
+                        </a>
+                    </article>
+                </div>
+                
+                <aside class="estudos-call">
+                    <h3> Continue Aprendendo</h3>
+                    <p>Estes materiais complementam o conhecimento apresentado neste site, oferecendo perspectivas mais profundas sobre a ciência, tecnologia e sustentabilidade que conectam campo e cidade. Explore, aprenda e compartilhe!</p>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Seção 8: Reflexões Interativas -->
+<section id="contato" class="section contato-section" role="region" aria-labelledby="contato-title">
+    <div class="container">
+        <header class="section-header">
+            <h2 id="contato-title" class="section-title"> Reflexões sobre Nossa Conexão</h2>
+            <p class="section-subtitle">Clique nos cards para descobrir as respostas e refletir sobre sua relação com o campo e a cidade</p>
+        </header>
+        
+        <div class="reflexao-grid">
+            <!-- Card 1 -->
+            <div class="flip-card">
+                <input type="checkbox" id="flip1" class="flip-checkbox">
+                <label for="flip1" class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3> Para Quem Mora na Cidade</h3>
+                        <p>Como você pode se conectar mais com o campo?</p>
+                        <span class="flip-hint">Clique para descobrir</span>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3> Suas Ações Fazem a Diferença</h3>
+                        <ul>
+                            <li>Compre em feiras locais</li>
+                            <li>Crie uma horta urbana</li>
+                            <li>Valorize agricultura familiar</li>
+                            <li>Faça compostagem</li>
+                            <li>Visite propriedades rurais</li>
+                        </ul>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flip-card">
+                <input type="checkbox" id="flip2" class="flip-checkbox">
+                <label for="flip2" class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3> Para Quem Mora no Campo</h3>
+                        <p>Como aproveitar melhor as inovações urbanas?</p>
+                        <span class="flip-hint">Clique para descobrir</span>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Tecnologia ao Seu Alcance</h3>
+                        <ul>
+                            <li>Use apps de gestão agrícola</li>
+                            <li>Participe de cursos online</li>
+                            <li>Conecte-se com AgTechs</li>
+                            <li>Explore financiamentos via fintechs</li>
+                            <li>Compartilhe conhecimento</li>
+                        </ul>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flip-card">
+                <input type="checkbox" id="flip3" class="flip-checkbox">
+                <label for="flip3" class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3>Para Todos Nós</h3>
+                        <p>Como fortalecer a conexão campo-cidade?</p>
+                        <span class="flip-hint">Clique para descobrir</span>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3>Juntos Somos Mais Fortes</h3>
+                        <ul>
+                            <li>Apoie políticas sustentáveis</li>
+                            
+                        </ul>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="flip-card">
+                <input type="checkbox" id="flip4" class="flip-checkbox">
+                <label for="flip4" class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3> Sustentabilidade</h3>
+                        <p>Qual o futuro da agricultura sustentável?</p>
+                        <span class="flip-hint">Clique para descobrir</span>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3> O Futuro é Agora</h3>
+                        <ul>
+                            <li>Agricultura regenerativa</li>
+                            <li>Energias renováveis</li>
+                            <li>Redução de desperdícios</li>
+                            <li>Sistemas integrados</li>
+                            <li>Economia circular</li>
+                        </ul>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="flip-card">
+                <input type="checkbox" id="flip5" class="flip-checkbox">
+                <label for="flip5" class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3> Educação</h3>
+                        <p>Como a educação pode unir campo e cidade?</p>
+                        <span class="flip-hint">Clique para descobrir</span>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3> Conhecimento Transforma</h3>
+                        <ul>
+                            <li>Intercâmbio estudantil</li>
+                            <li>Cursos técnicos digitais</li>
+                            <li>Pesquisas colaborativas</li>
+                            <li>Extensão rural tecnológica</li>
+                            <li>Educação ambiental</li>
+                        </ul>
+                    </div>
+                </label>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="flip-card">
+                <input type="checkbox" id="flip6" class="flip-checkbox">
+                <label for="flip6" class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <h3> Inovação</h3>
+                        <p>Que tecnologias vão revolucionar a agricultura?</p>
+                        <span class="flip-hint">Clique para descobrir</span>
+                    </div>
+                    <div class="flip-card-back">
+                        <h3> Tecnologias do Futuro</h3>
+                        <ul>
+                            <li>Robôs autônomos</li>
+                            <li>Sensores IoT</li>
+                            <li>Blockchain alimentar</li>
+                            <li>Agricultura vertical</li>
+                            <li>IA para clima</li>
+                        </ul>
+                    </div>
+                </label>
+            </div>
+        </div>
+        
+        <aside class="acao-call">
+            <h3> Sua Reflexão Importa</h3>
+            <p>Cada pergunta e resposta nos ajuda a entender melhor como campo e cidade podem trabalhar juntos. Compartilhe suas reflexões e faça parte dessa transformação que conecta conhecimento, tecnologia e sustentabilidade!</p>
+        </aside>
+    </div>
+</section>
+
     </main>
 
     <!-- Footer -->
@@ -390,28 +715,46 @@
         <div class="container">
             <div class="footer-content">
                 <section class="footer-section">
-                    <h3> Sobre o Projeto</h3>
+                    <h3>🌱 Sobre o Projeto</h3>
                     <p>Site desenvolvido para o Concurso Agrinho 2025, tema "Festejando a conexão campo cidade". Todos os textos e elementos visuais são 100% autorais.</p>
                 </section>
                 
                 <section class="footer-section">
-                    <h3> Referências Científicas</h3>
+                    <h3>🔬 Fontes de Pesquisa</h3>
                     <ul>
-                        <li>Embrapa - Empresa Brasileira de Pesquisa Agropecuária</li>
-                        <li>FAO - Organização das Nações Unidas para Alimentação</li>
-                        <li>IBGE - Instituto Brasileiro de Geografia e Estatística</li>
-                        <li>Ministério da Agricultura, Pecuária e Abastecimento</li>
+                        <li><strong>EMBRAPA:</strong> Dados sobre solo e microorganismos</li>
+                        <li><strong>IBGE Censo 2022:</strong> População urbana (84%)</li>
+                        <li><strong>CONAB 2023:</strong> Movimentação CEASAs (17M ton/ano)</li>
+                        <li><strong>MAPA 2023:</strong> Crédito rural (R$ 340 bilhões)</li>
+                        <li><strong>FAPESP:</strong> Investimentos em AgTechs (R$ 15 bi)</li>
+                        <li><strong>ABIMAQ:</strong> Indústria de máquinas agrícolas</li>
+                        <li><strong>Radar AgTech 2023:</strong> Startups agro (1.200 empresas)</li>
+                        <li><strong>McKinsey Global Institute:</strong> Produtividade agrícola</li>
+                    </ul>
+                </section>
+
+                <section class="footer-section">
+                    <h3>🔗 Fontes AgTech</h3>
+                    <ul>
+                        <li><strong>XMobots:</strong> Drones agrícolas brasileiros</li>
+                        <li><strong>Solinftec:</strong> Unicórnio da agricultura digital</li>
+                        <li><strong>Aegro:</strong> Gestão agrícola via smartphone</li>
+                        <li><strong>Agrosmart:</strong> Agricultura de precisão</li>
+                        <li><strong>Traive:</strong> Fintech do agronegócio</li>
+                        <li><strong>Radar AgTech 2024:</strong> Mapeamento do setor</li>
+                        <li><strong>SP Ventures:</strong> Investimentos em AgTechs</li>
+                        <li><strong>Distrito AgTech:</strong> Ecossistema de inovação</li>
                     </ul>
                 </section>
                 
                 <section class="footer-section">
-                    <h3> Ferramentas Utilizadas</h3>
+                    <h3>🎨 Ferramentas Utilizadas</h3>
                     <ul>
                         <li>HTML5 semântico e acessível</li>
                         <li>CSS3 com animações profissionais</li>
                         <li>Design responsivo manual</li>
                         <li>Fotos: AMANDA CRISTINA FOETSCH<br>
-                        (professora Matematica II)</li>
+                        (professora Matemática II)</li>
                         <li>Emojis fornecidos pelo Windows. © Microsoft Corporation.</li>
                         <li>Acessibilidade seguindo padrões WCAG 2.1</li>
                     </ul>
